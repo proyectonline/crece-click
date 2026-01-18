@@ -1,60 +1,371 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>crece.click | Aprende un oficio y emprende desde casa</title>
+    <title>crece.click | Aprende un Oficio y Emprende</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
 <body>
 
-    <header>
-        <nav>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-container">
             <div class="logo">crece<span>.click</span></div>
-            <div class="menu-icon">☰</div>
-        </nav>
+            <nav class="nav-links">
+                <a href="#cursos">Cursos</a>
+                <a href="#ventajas">Beneficios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Transforma tu futuro hoy</h1>
-        <p>Aprende un oficio rentable y monta tu propio negocio independiente.</p>
-        <div class="search-bar">
-            <input type="text" placeholder="¿Qué oficio quieres aprender?">
+        <div class="container hero-content">
+            <h1>Transforma Tu Futuro con un Oficio Rentable</h1>
+            <p>Descubre las habilidades técnicas más demandadas del mercado. Aprende desde casa, a tu ritmo, y construye
+                tu propio negocio independiente.</p>
+            <a href="#cursos" class="cta-button">Ver Cursos Disponibles</a>
         </div>
     </section>
 
-    <main>
-        <section class="category">
-            <h2>🛠️ Oficios de Alta Demanda</h2>
-            <div class="scroll-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Aire Acondicionado">
-                    <h3>Técnico en Climatización</h3>
-                    <a href="oficios/aire-acondicionado.html" class="btn">Ver Oportunidad</a>
+    <!-- Features Section -->
+    <section class="features" id="ventajas">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>Certificación Profesional</h3>
+                    <p>Obtén un diploma que avale tus conocimientos y genera confianza en tus clientes.</p>
                 </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Celulares">
-                    <h3>Reparación de Móviles</h3>
-                    <a href="oficios/reparacion-celulares.html" class="btn">Ver Oportunidad</a>
+                <div class="feature-item">
+                    <i class="fas fa-laptop-house"></i>
+                    <h3>100% Online</h3>
+                    <p>Estudia desde cualquier dispositivo, en tus horarios libres, sin descuidar tu trabajo actual.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Salida Laboral Rápida</h3>
+                    <p>Enfocados en oficios con alta demanda real en tu ciudad para que factures pronto.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="category">
-            <h2>💅 Estética y Belleza</h2>
-            <div class="scroll-container">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Manicura">
-                    <h3>Manicura Profesional</h3>
-                    <a href="oficios/manicura.html" class="btn">Ver Oportunidad</a>
+    <!-- Courses Section -->
+    <main class="container courses-section" id="cursos">
+        <div class="section-header">
+            <h2>Nuestros Programas Destacados</h2>
+            <p>Elige el camino hacia tu independencia financiera</p>
+        </div>
+
+        <div class="courses-grid">
+
+            <!-- CATEGORÍA: OFICIOS TÉCNICOS -->
+
+            <!-- 1. Mecánica de Motos -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Alta Demanda</span>
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80"
+                        alt="Mecánica de Motos">
                 </div>
-            </div>
-        </section>
+                <div class="course-content">
+                    <span class="course-category">Automotriz</span>
+                    <h3>Mecánica de Motos</h3>
+                    <p class="course-description">Convierte tu pasión por las motos en un taller rentable.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/N57347793N" class="course-btn">Ver Programa y Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2. Electricidad Automotriz -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Técnico</span>
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80"
+                        alt="Electricidad Automotriz">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Automotriz</span>
+                    <h3>Electricidad Automotriz</h3>
+                    <p class="course-description">Ideal para especializarte en talleres mecánicos modernos.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/Q95864469T" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3. Reparación de Refrigeradores (Antes Lavadoras) -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Técnico</span>
+                    <img src="assets/img/refri.jpg" alt="Reparación Refrigeradores">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Hogar</span>
+                    <h3>Reparación de Refrigeradores</h3>
+                    <p class="course-description">Brinda servicio técnico especializado en refrigeración doméstica.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/U95140717A" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 4. Aire Acondicionado -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Alta Demanda</span>
+                    <img src="assets/img/aireacondicionado.jpg" alt="Aire Acondicionado">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Climatización</span>
+                    <h3>Aire Acondicionado</h3>
+                    <p class="course-description">Instalación y mantenimiento profesional de equipos.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/N95883911X" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 5. Carpintería en Aluminio -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Construcción</span>
+                    <img src="assets/img/carpinteria.jpg" alt="Carpintería Aluminio">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Oficio</span>
+                    <h3>Carpintería en Aluminio</h3>
+                    <p class="course-description">Fabricación de aberturas y estructuras de alta rentabilidad.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/D95914570C" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CATEGORÍA: TECNOLOGÍA -->
+
+            <!-- 6. Ofimática -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Administración</span>
+                    <img src="assets/img/ofimatica.png" alt="Ofimática Profesional">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Oficina</span>
+                    <h3>Ofimática Profesional</h3>
+                    <p class="course-description">Domina las herramientas digitales para servicios administrativos.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/E95867063K" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 7. Meta Ads -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Marketing</span>
+                    <img src="assets/img/meta-ads.png" alt="Experto en Meta Ads">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Digital</span>
+                    <h3>Experto en Meta Ads</h3>
+                    <p class="course-description">Monta tu propia agencia de marketing y gestiona anuncios.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/B95867794T" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CATEGORÍA: GASTRONOMÍA -->
+
+            <!-- 8. Pan Casero y Artesanal -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Gastronomía</span>
+                    <img src="assets/img/pan-casero.png" alt="Pan Casero">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Cocina</span>
+                    <h3>Pan Casero y Artesanal</h3>
+                    <p class="course-description">Crea tu propia panadería artesanal en casa.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/C93658809J" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 9. Conservas -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Artesanal</span>
+                    <img src="assets/img/conservas.png" alt="Conservas Naturales">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Cocina</span>
+                    <h3>Conservas Naturales</h3>
+                    <p class="course-description">Vende productos artesanales y naturales todo el año.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/N57347914H?dp=1" target="_blank" class="course-btn">Ver Programa
+                            y Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 10. Repostería Vegana -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Saludable</span>
+                    <img src="assets/img/reposteria-vegana.png" alt="Repostería Vegana">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Gastronomía</span>
+                    <h3>Repostería Vegana</h3>
+                    <p class="course-description">Ingresa a un mercado saludable de alta demanda.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/L95868942C" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CATEGORÍA: BELLEZA -->
+
+            <!-- 11. Manicure -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Belleza</span>
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+                        alt="Manicure">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Estética</span>
+                    <h3>Manicure Profesional</h3>
+                    <p class="course-description">Abre tu propio estudio de belleza y uñas.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/U102784108Y?dp=1" target="_blank" class="course-btn">Ver
+                            Programa y Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 12. Maquillaje Avanzado -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Belleza</span>
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+                        alt="Maquillaje Profesional">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Estética</span>
+                    <h3>Maquillaje Avanzado</h3>
+                    <p class="course-description">Servicios profesionales para bodas y eventos.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/Y102784090I?dp=1" target="_blank" class="course-btn">Ver
+                            Programa y Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CATEGORÍA: ARTESANÍA Y MANUALIDADES -->
+
+            <!-- 13. Jabones y Velas -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Bienestar</span>
+                    <img src="assets/img/velas.jpg" alt="Jabones y Velas">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Artesanía</span>
+                    <h3>Jabones y Velas</h3>
+                    <p class="course-description">Crea tu propia marca de productos de bienestar y relax.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/T95869321C" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 14. Costura con Ropa Usada -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Sostenible</span>
+                    <img src="assets/img/costura.png" alt="Costura y Reciclaje">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Moda</span>
+                    <h3>Costura y Reciclaje</h3>
+                    <p class="course-description">Emprende en moda sostenible y arreglos de prendas.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/M95868839C" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CATEGORÍA: SERVICIOS Y OTROS -->
+
+            <!-- 15. Cuidado de Tercera Edad -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Salud</span>
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80"
+                        alt="Cuidado Adulto Mayor">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Servicios</span>
+                    <h3>Cuidado de Tercera Edad</h3>
+                    <p class="course-description">Ofrece servicios profesionales de asistencia y cuidado.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/L95868658S" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 16. Jardinería Vertical -->
+            <article class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">Tendencia</span>
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
+                        alt="Jardinería Vertical">
+                </div>
+                <div class="course-content">
+                    <span class="course-category">Diseño</span>
+                    <h3>Jardinería Vertical</h3>
+                    <p class="course-description">Diseño y mantenimiento de espacios verdes modernos.</p>
+                    <div class="course-footer">
+                        <a href="https://go.hotmart.com/C95868874K" target="_blank" class="course-btn">Ver Programa y
+                            Emprender</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 crece.click - Todos los derechos reservados.</p>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 1rem; color: white;">crece<span>.click</span></div>
+            <p>&copy; 2026 crece.click - Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Transformando vidas a través de la educación técnica.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
